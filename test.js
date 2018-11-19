@@ -14,21 +14,21 @@ bot.on('ready', ()=>{
 });
 
 // TOKEN DEL BOT
-bot_secret_token = "NTEzNjg4NTg2ODI3MDcxNDg4.DtRFcw.313HKl94HGfWqYDrlY7OG5DFXpc"
+bot_secret_token = "xxx"
 
 // LOGIN DEL BOT
 bot.login(bot_secret_token)
 
 // QUESTO TI SERVE AD AGGIUNGERE UN UTENTE ALLA LISTA-UTENTI
 bot.on("guildMemberAdd", member => {
-    var welcomeChannel = bot.channels.get("513413822762188811")
+    var welcomeChannel = bot.channels.get("xxx")
     welcomeChannel.send("Welcome " + member + "! Sei uno scarsone, vero? Raggiungi i tuoi amici Noob in Party \:wink:");
 
 })
 
 // QUESTO IMPEDISCE DI MANDARE IN CONFUSIONE IL BOT
 bot.on("guildMemberRemove", (member)=> {
-    var welcomeChannel = bot.channels.get("513413822762188811")
+    var welcomeChannel = bot.channels.get("xxx")
     welcomeChannel.send("Fuck you " + member + "! Nessuno sentirà la tua mancanza!!! \:rage: \:middle_finger:");
 })
 
